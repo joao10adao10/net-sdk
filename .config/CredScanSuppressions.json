@@ -1,0 +1,12 @@
+{
+    "tool": "Credential Scanner",
+    "suppressions": [
+        {
+            "_justification": "Legitimate key/cert used for testing",
+            "file": [
+                "testassets/BenchmarkApp/testCert.pfx",
+                "test/TestCertificates/testCert.pfx"
+            ]
+        }
+    ]
+}

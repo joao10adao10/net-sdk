@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Toolkit for building a Kubernetes Ingress Controller in .NET using the infrastructure from ASP.NET and .NET</Description>
+    <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
+    <OutputType>Library</OutputType>
+    <NoWarn>$(NoWarn);CS8002</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ReverseProxy\Yarp.ReverseProxy.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="KubernetesClient" Version="6.0.25" />
+    <PackageReference Include="YamlDotNet" Version="11.2.1" />
+  </ItemGroup>
+
+</Project>
